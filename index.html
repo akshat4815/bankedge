@@ -14,8 +14,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Playwrite+BE+WAL:wght@100..400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@icon/icofont@1.0.1-alpha.1/icofont.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </head>
 <body>
+  <script>
+  AOS.init();
+</script>
     <div class="container">
         <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
           <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
@@ -24,11 +32,12 @@
           </a>
     
           <ul class="nav nav-pills">
-            <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Programs</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Roadmap</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Syllabus</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#home" class="nav-link active" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="#programs" class="nav-link">Programs</a></li>
+            <li class="nav-item"><a href="#roadmap" class="nav-link">Roadmap</a></li>
+            <li class="nav-item"><a href="#syllabus" class="nav-link">Syllabus</a></li>
+            <li class="nav-item"><a href="#placements" class="nav-link">Placements</a></li>
+            <li class="nav-item"><a href="#placements" class="nav-link">Program Fee</a></li>
           </ul>
         </header>
       </div>
@@ -366,17 +375,21 @@
     left: 30%;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
 </style>
 </head>
 <body>
-<div class="container px-4 py-5">
+  <!--Header-->
+<div class="container px-4 py-5"  data-aos="fade-up">
     <!-- Main Content -->
     <h2 class="pb-2 border-bottom">Why Should You Join Banking? Your Future Starts Here!</h2>
     
     <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
         <!-- Career Growth -->
         <div class="col d-flex align-items-start">
-            <div class="bg-info p-4 rounded">
+            <div class="bg-info p-4 rounded"  data-aos="flip-left">
                 <h3 class="fs-2 text-body-emphasis">1. Elevate Your Career</h3>
                 <p><strong>Endless Growth:</strong><br>Structured paths & top-tier bank partnerships.</p>
                 <p><strong>Diverse Roles:</strong><br>Financial analysis, customer management, and more.</p>
@@ -384,7 +397,7 @@
         </div>
         <!-- Compensation & Benefits -->
         <div class="col d-flex align-items-start">
-            <div class="bg-secondary p-4 rounded">
+            <div class="bg-secondary p-4 rounded"  data-aos="flip-right">
                 <h3 class="fs-2 text-body-emphasis">2. Competitive Compensation</h3>
                 <p><strong>Top Salaries:</strong><br>Attractive pay with our expert training.</p>
                 <p><strong>Comprehensive Benefits:</strong><br>Health insurance, retirement plans, bonuses.</p>
@@ -392,7 +405,7 @@
         </div>
         <!-- Job Security & Stability -->
         <div class="col d-flex align-items-start">
-            <div class="bg-danger p-4 rounded">
+            <div class="bg-danger p-4 rounded"  data-aos="flip-left">
                 <h3 class="fs-2 text-body-emphasis">3. Job Security & Stability</h3>
                 <p><strong>Unmatched Security:</strong><br>More stable than many private sector roles.</p>
                 <p><strong>Long-Term Stability:</strong><br>Resilient career in a vital sector.</p>
@@ -403,7 +416,7 @@
         
         <!-- Global Recognition -->
         <div class="col d-flex align-items-start">
-            <div class="bg-success p-4 rounded">
+            <div class="bg-success p-4 rounded"  data-aos="flip-right">
                 <h3 class="fs-2 text-body-emphasis">4. Global Recognition</h3>
                 <p><strong>Professional Development:</strong><br>Continuous learning & career growth.</p>
                 <p><strong>Global Opportunities:</strong><br>Enhance your standing and open global doors.</p>
@@ -415,7 +428,7 @@
         </div>
         <!-- Skills Development -->
         <div class="col d-flex align-items-start">
-            <div class="bg-warning p-4 rounded">
+            <div class="bg-warning p-4 rounded"  data-aos="flip-left">
                 <h3 class="fs-2 text-body-emphasis">5. Essential Skills Development</h3>
                 <p><strong>Financial Expertise:</strong><br>Master financial analysis, risk management.</p>
                 <p><strong>Tech Savvy:</strong><br>Lead with cutting-edge financial technologies.</p>
@@ -423,7 +436,7 @@
         </div>
         <!-- Positive Societal Impact -->
         <div class="col d-flex align-items-start">
-            <div class="bg-light p-4 rounded">
+            <div class="bg-light p-4 rounded" data-aos="flip-right">
                 <h3 class="fs-2 text-body-emphasis">6. Positive Societal Impact</h3>
                 <p><strong>Boost Financial Literacy:</strong><br>Help individuals & businesses thrive.</p>
                 <p><strong>Drive Economic Growth:</strong><br>Support entrepreneurship & regional stability.</p>
@@ -431,7 +444,7 @@
         </div>
         <!-- Inclusive Environment -->
         <div class="col d-flex align-items-start">
-            <div class="bg-primary p-4 rounded">
+            <div class="bg-primary p-4 rounded" data-aos="flip-left">
                 <h3 class="fs-2 text-body-emphasis">7. Dynamic & Inclusive Environment</h3>
                 <p><strong>Collaborative Culture:</strong><br>Thrive in teamwork & innovation.</p>
                 <p><strong>Diversity & Inclusion:</strong><br>A welcoming environment for all.</p>
@@ -439,7 +452,7 @@
         </div>
         <!-- Added 8th Point -->
         <div class="col d-flex align-items-start">
-            <div class="bg-light-dark p-4 rounded">
+            <div class="bg-light-dark p-4 rounded" data-aos="flip-right">
                 <h3 class="fs-2 text-body-emphasis">8. Work-Life Balance</h3>
                 <p><strong>Flexible Hours:</strong><br>Enjoy a balanced schedule that fits your life.</p>
                 <p><strong>Family-Friendly Policies:</strong><br>Supportive work environment for family needs.</p>
@@ -478,14 +491,16 @@
 </div>
 <hr>
 <!--Roadmap-->
-<div class="container">
+<section id="roadmap">
+<div class="container" data-aos="zoom-out">
   <div class="row">
     <div class="col-md-12 text-center">
       <h3>Your Banking Pathway</h3>
     </div>
   </div>
 </div>
-<div class="container">
+</section>
+<div class="container" data-aos="zoom-in">
   <div class="row">
    <div class="col">
       <img src="./img/pathway.png" class="img-fluid custom-size mx-auto d-block" alt="" width="450px" height="auto"  style="width: 150p; height: 300px">
@@ -494,14 +509,16 @@
 </div>
 <hr>
 <!--Programs-->
-<div class="container">
+<section id="programs">
+<div class="container" id="section1">
   <div class="row">
-    <div class="col-md-12 text-center">
+    <div class="col-md-12 text-center" data-aos="fade-up">
       <h3 class="mt-4">Placement Guarantee Programs* :</h3>
     </div>
   </div>
 </div>
-<div class="container">
+</section>
+<div class="container" data-aos="zoom-in">
   <div class="row">
     <div class="col-md-12 text-center">
       <h3 class="mt-4" style="font-family: monospace; font-weight: bolder;">Professional Banking Executive Program</h3>
@@ -517,19 +534,20 @@
 </div>
 <div class="container">
   <div class="row">
-    <div class="col-md-12 col-lg-4 text-center">
+    <div class="col-md-12 col-lg-4 text-center" data-aos="zoom-in-left">
       <h4 class="mt-4" style="background-color: #c26e00; height: 85px;">Duration: <br/> 90 Days</h4>
     </div>
-    <div class="col-md-12 col-lg-4 text-center">
+    <div class="col-md-12 col-lg-4 text-center"data-aos="zoom-in-right">
       <h4 class="mt-4" style="background-color: #c26e00; height: 85px;">Mode : <br/> Classroom/Online**</h4>
     </div>
-    <div class="col-md-12 col-lg-4 text-center">
+    <div class="col-md-12 col-lg-4 text-center"data-aos="zoom-in-left">
       <h4 class="mt-4" style="background-color: #c26e00; height: 85px;">Admission: <br/>Based on Assessment</h4>
     </div>
   </div>
 </div>
 <hr>
 <!--Curriculum-title-->
+<section id="syllabus">
 <div class="container">
   <div class="row">
     <div class="col-md-12 text-center">
@@ -537,11 +555,12 @@
     </div>
   </div>
 </div>
+</section>
 <hr>
 <!--Curriculum details-->
 <div class="row row-cols-1 row-cols-md-3 g-4">
   <div class="col">
-    <div class="card">
+    <div class="card" data-aos="flip-up">
       <img src="./img/2163.jpg" class="card-img-top" alt="Introduction to Banking">
       <div class="card-body">
         <h5 class="card-title">Introduction to Banking</h5>
@@ -550,7 +569,7 @@
     </div>
   </div>
   <div class="col">
-    <div class="card">
+    <div class="card" data-aos="flip-up">
       <img src="./img/trade.avif" class="card-img-top" alt="Trade Finance Operations">
       <div class="card-body">
         <h5 class="card-title">Trade Finance Operations</h5>
@@ -559,7 +578,7 @@
     </div>
   </div>
   <div class="col">
-    <div class="card">
+    <div class="card" data-aos="flip-up">
       <img src="./img/10892.jpg" class="card-img-top" alt="Retail Banking Operations">
       <div class="card-body">
         <h5 class="card-title">Retail Banking Operations</h5>
@@ -568,7 +587,7 @@
     </div>
   </div>
   <div class="col">
-    <div class="card">
+    <div class="card" data-aos="flip-left">
       <img src="./img/3156.jpg" class="card-img-top" alt="Credit Administration">
       <div class="card-body">
         <h5 class="card-title">Credit Administration</h5>
@@ -577,7 +596,7 @@
     </div>
   </div>
   <div class="col">
-    <div class="card">
+    <div class="card" data-aos="flip-right">
       <img src="./img/cash-mana.avif" class="card-img-top" alt="Cash Management Service">
       <div class="card-body">
         <h5 class="card-title">Cash Management Service</h5>
@@ -586,7 +605,7 @@
     </div>
   </div>
   <div class="col">
-    <div class="card">
+    <div class="card" data-aos="flip-right">
       <img src="./img/secure.avif" class="card-img-top" alt="Security Information System">
       <div class="card-body">
         <h5 class="card-title">Security Information System</h5>
@@ -595,7 +614,7 @@
     </div>
   </div>
   <div class="col">
-    <div class="card">
+    <div class="card" data-aos="flip-down">
       <img src="./img/crime.avif" class="card-img-top" alt="Financial Crime Management">
       <div class="card-body">
         <h5 class="card-title">Financial Crime Management</h5>
@@ -604,7 +623,7 @@
     </div>
   </div>
   <div class="col">
-    <div class="card">
+    <div class="card" data-aos="flip-down">
       <img src="./img/interview.avif" class="card-img-top" alt="Interview Preparation & Soft Skills">
       <div class="card-body">
         <h5 class="card-title">Interview Preparation & Soft Skills</h5>
@@ -615,7 +634,7 @@
 </div>
 <hr>
 <!--Expect-->
-<div class="container">
+<div class="container"data-aos="fade-up">
   <div class="row">
     <div class="col text-center">
       <h2>What Will You Expect ?</h2>
@@ -625,7 +644,7 @@
 <hr>
 <div class="container mt-5">
   <!-- First Section -->
-  <div class="row mb-4">
+  <div class="row mb-4" data-aos="slide-up">
       <div class="col-lg-4 text-center">
           <img src="./img/place.avif" alt="Circular Image" class="circular-img">
       </div>
@@ -636,7 +655,7 @@
   </div>
   <hr>
   <!-- Fourth Section -->
-  <div class="row mb-4">
+  <div class="row mb-4" data-aos="slide-up">
       <div class="col-lg-8 mt-3">
           <h2 class="text-center">Profile Enhancement</h2>
           <p class="text-center">Our dedicated CAS team will help you enhance your portfolio with relevant courses and projects to make a strong impression on interviewers and secure the job you aspire to.</p>
@@ -647,7 +666,7 @@
   </div>
   <hr>
   <!-- Fifth Section -->
-  <div class="row mb-4">
+  <div class="row mb-4" data-aos="slide-up">
       <div class="col-lg-4 text-center">
           <img src="./img/resume.avif" alt="Circular Image" class="circular-img">
       </div>
@@ -658,7 +677,7 @@
   </div>
   <hr>
   <!-- Sixth Section -->
-  <div class="row mb-4">
+  <div class="row mb-4" data-aos="slide-up">
       <div class="col-lg-8 mt-3">
           <h2 class="text-center">Interview Preparation</h2>
           <p class="text-center">Whether it's HR interactions or technical interviews, we'll prepare you to communicate effectively. Our preparation model includes basic to advanced Q&A sessions, one-on-one mock interviews, and panel interviews led by industry professionals.</p>
@@ -672,7 +691,7 @@
 <hr>
 <!--Fee-->
 <div class="container">
-  <div class="row mb-4">
+  <div class="row mb-4" data-aos="flip-left">
    <div class="col">
     <h1 class="text-center" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight: bolder;">Guaranteed Placement Program Fee</h1>
     <p ><h2 class="text-center" style="font-style: italic;font-weight: bolder; color: #4e524f;">₹ 40,000/*</h2></p>
@@ -683,7 +702,7 @@
 <hr>
 <!--What should you become ?-->
 <div class="container">
-  <div class="row">
+  <div class="row" data-aos="zoom-in">
     <div class="col text-center">
       <h2>What Will You Achieve ?</h2>
     </div>
@@ -693,98 +712,98 @@
 <div class="container">
   <div class="row">
     <!-- Card 1 -->
-    <div class="card col-lg-4 col-md-6" style="background-color: #c6ccd3;">
+    <div class="card col-lg-4 col-md-6" style="background-color: #c6ccd3;" data-aos="fade-up">
       <div class="card-body">
         <h5 class="card-title" style="color: #1c43de;">Trade Finance Executive</h5>
         <p class="card-text" style="color: #6d706d;">A role focused on managing trade finance transactions and client relationships.</p>
       </div>
     </div>
     <!-- Card 2 -->
-    <div class="card col-lg-4 col-md-6" style="background-color: #c6ccd3;">
+    <div class="card col-lg-4 col-md-6" style="background-color: #c6ccd3;" data-aos="fade-up">
       <div class="card-body">
         <h5 class="card-title" style="color: #1c43de;">Forex Transactions Executive</h5>
         <p class="card-text" style="color: #6d706d;">Handles foreign exchange transactions and market analysis.</p>
       </div>
     </div>
     <!-- Card 3 -->
-    <div class="card col-lg-4 col-md-6" style="background-color: #c6ccd3;">
+    <div class="card col-lg-4 col-md-6" style="background-color: #c6ccd3;" data-aos="fade-up">
       <div class="card-body">
         <h5 class="card-title" style="color: #1c43de;">Credit Manager</h5>
         <p class="card-text" style="color: #6d706d;">Oversees credit policies and manages credit risk.</p>
       </div>
     </div>
     <!-- Card 4 -->
-    <div class="card col-lg-4 col-md-6" style="background-color: #c6ccd3;">
+    <div class="card col-lg-4 col-md-6" style="background-color: #c6ccd3;" data-aos="fade-up">
       <div class="card-body">
         <h5 class="card-title" style="color: #1c43de;">Customer Service Officer</h5>
         <p class="card-text" style="color: #6d706d;">Provides support and assistance to customers, resolving issues and inquiries.</p>
       </div>
     </div>
     <!-- Card 5 -->
-    <div class="card col-lg-4 col-md-6" style="background-color: #c6ccd3;">
+    <div class="card col-lg-4 col-md-6" style="background-color: #c6ccd3;" data-aos="fade-up">
       <div class="card-body">
         <h5 class="card-title" style="color: #1c43de;">Account Manager</h5>
         <p class="card-text" style="color: #6d706d;">Manages client accounts and relationships to ensure customer satisfaction.</p>
       </div>
     </div>
     <!-- Card 6 -->
-    <div class="card col-lg-4 col-md-6" style="background-color: #c6ccd3;">
+    <div class="card col-lg-4 col-md-6" style="background-color: #c6ccd3;" data-aos="fade-up">
       <div class="card-body">
         <h5 class="card-title" style="color: #1c43de;">Credit Relationship Manager</h5>
         <p class="card-text" style="color: #6d706d;">Develops and maintains relationships with clients regarding credit facilities.</p>
       </div>
     </div>
     <!-- Card 7 -->
-    <div class="card col-lg-4 col-md-6" style="background-color: #c6ccd3;">
+    <div class="card col-lg-4 col-md-6" style="background-color: #c6ccd3;" data-aos="fade-up">
       <div class="card-body">
         <h5 class="card-title" style="color: #1c43de;">Fraud Management Officer</h5>
         <p class="card-text" style="color: #6d706d;">Monitors and prevents fraudulent activities within the organization.</p>
       </div>
     </div>
     <!-- Card 8 -->
-    <div class="card col-lg-4 col-md-6" style="background-color: #c6ccd3;">
+    <div class="card col-lg-4 col-md-6" style="background-color: #c6ccd3;" data-aos="fade-up">
       <div class="card-body">
         <h5 class="card-title" style="color: #1c43de;">Assistant Acquisition Manager</h5>
         <p class="card-text" style="color: #6d706d;">Assists in acquiring new business opportunities and managing acquisition processes.</p>
       </div>
     </div>
     <!-- Card 9 -->
-    <div class="card col-lg-4 col-md-6" style="background-color: #c6ccd3;">
+    <div class="card col-lg-4 col-md-6" style="background-color: #c6ccd3;" data-aos="fade-up">
       <div class="card-body">
         <h5 class="card-title" style="color: #1c43de;">Teller Service Executive</h5>
         <p class="card-text" style="color: #6d706d;">Handles transactions and provides services to customers at the bank teller counter.</p>
       </div>
     </div>
     <!-- Card 10 -->
-    <div class="card col-lg-4 col-md-6" style="background-color: #c6ccd3;">
+    <div class="card col-lg-4 col-md-6" style="background-color: #c6ccd3;" data-aos="fade-up">
       <div class="card-body">
         <h5 class="card-title" style="color: #1c43de;">Relationship Officer</h5>
         <p class="card-text" style="color: #6d706d;">Maintains and enhances client relationships to foster loyalty and satisfaction.</p>
       </div>
     </div>
     <!-- Card 11 -->
-    <div class="card col-lg-4 col-md-6" style="background-color: #c6ccd3;">
+    <div class="card col-lg-4 col-md-6" style="background-color: #c6ccd3;" data-aos="fade-up">
       <div class="card-body">
         <h5 class="card-title" style="color: #1c43de;">Wealth Manager</h5>
         <p class="card-text" style="color: #6d706d;">Provides investment advice and manages wealth portfolios for high-net-worth individuals.</p>
       </div>
     </div>
     <!-- Card 12 -->
-    <div class="card col-lg-4 col-md-6" style="background-color: #c6ccd3;">
+    <div class="card col-lg-4 col-md-6" style="background-color: #c6ccd3;" data-aos="fade-up">
       <div class="card-body">
         <h5 class="card-title" style="color: #1c43de;">Executive (Wealth Management)</h5>
         <p class="card-text" style="color: #6d706d;">Oversees and implements wealth management strategies and solutions.</p>
       </div>
     </div>
     <!-- Card 13 -->
-    <div class="card col-lg-4 col-md-6" style="background-color: #c6ccd3;">
+    <div class="card col-lg-4 col-md-6" style="background-color: #c6ccd3;" data-aos="fade-up">
       <div class="card-body">
         <h5 class="card-title" style="color: #1c43de;">Transactions Operations Executive</h5>
         <p class="card-text" style="color: #6d706d;">Manages and executes transaction operations to ensure smooth processing.</p>
       </div>
     </div>
     <!-- Card 14 -->
-    <div class="card col-lg-4 col-md-6" style="background-color: #c6ccd3;">
+    <div class="card col-lg-4 col-md-6" style="background-color: #c6ccd3;" data-aos="fade-up">
       <div class="card-body">
         <h5 class="card-title" style="color: #1c43de;">Fraud Detection & Vigilance Officer</h5>
         <p class="card-text" style="color: #6d706d;">Specializes in detecting and preventing fraudulent activities and ensuring vigilance.</p>
@@ -795,15 +814,17 @@
 </div>
 <hr>
 <!--Testimonial-->
+<section id="placements">
 <div class="container">
-  <div class="row">
+  <div class="row" data-aos="fade-up">
     <div class="col text-center">
       <h2>Our Recent Placement</h2>
     </div>
   </div>
 </div>
+</section>
 <hr>
- <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+ <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-aos="flip-left">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -953,33 +974,36 @@
       }
     });
   });
+  function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
 </script>
 <!--faq-->
-<div class="container faq-section">
+<div class="container faq-section" data-aos="fade-up">
     <h2 class="text-center mb-4">Still Having Queries ?</h2>
 
     <div class="accordion" id="accordionPanelsStayOpenExample">
-        <div class="accordion-item">
+        <div class="accordion-item" data-aos="fade-up">
             <h2 class="accordion-header" id="headingOne">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
                     What is the PROBE Program?
                 </button>
             </h2>
             <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
-                <div class="accordion-body">
+                <div class="accordion-body" data-aos="fade-up">
                     The PROBE (Professional Banking Executive) program is a 150-hour certification course tailored for aspiring retail bankers. It provides a deep dive into banking products, processes, and operations, equipping you with the skills necessary for entry-level positions in retail banking.
                 </div>
             </div>
         </div>
 
-        <div class="accordion-item">
+        <div class="accordion-item" data-aos="fade-up">
             <h2 class="accordion-header" id="headingTwo">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
                     How long is the PROBE Program?
                 </button>
             </h2>
             <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
-                <div class="accordion-body">
+                <div class="accordion-body" data-aos="fade-up">
                     The PROBE program is structured to be completed in 3 months through full-time weekday sessions. For those with different scheduling needs, we offer a 2-month hybrid format that combines online and offline learning. For more details on schedules, please contact our nearest center.
                 </div>
             </div>
@@ -992,7 +1016,7 @@
                 </button>
             </h2>
             <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
-                <div class="accordion-body">
+                <div class="accordion-body" data-aos="fade-up">
                     Our program includes 150 hours of in-person classroom instruction along with access to our advanced Learning Management System (LMS). You will receive PowerPoint presentations, case studies, quizzes, and eBooks through the LMS. Your provided credentials will give you access to these valuable resources.
                 </div>
             </div>
@@ -1005,13 +1029,13 @@
                 </button>
             </h2>
             <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour">
-                <div class="accordion-body">
+                <div class="accordion-body" data-aos="fade-up">
                     Upon completion of the PROBE program, you will be prepared for various entry-level roles in retail banking such as Personal Banker, Relationship Manager, Customer Service Executive, and Loan Officer. Our program is designed to help you excel in these positions and advance your career.
                 </div>
             </div>
         </div>
 
-        <div class="accordion-item">
+        <div class="accordion-item" data-aos="fade-up">
             <h2 class="accordion-header" id="headingFive">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
                     What are the fees for the PROBE Program?
@@ -1102,6 +1126,56 @@
             </div>
         </div>
     </div>
+</div>
+<!--wHhatsapp-->
+<style>
+  .whatsapp-icon {
+      position: fixed;
+      bottom: 20px; /* Adjust as needed */
+      right: 20px;  /* Adjust as needed */
+      background-color: #25D366; /* WhatsApp color */
+      color: white;
+      border-radius: 50%;
+      padding: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      z-index: 1000; /* Ensure it's on top of other content */
+  }
+  .whatsapp-icon a {
+      color: white;
+      text-decoration: none;
+      font-size: 50px; /* Adjust size as needed */
+  }
+</style>
+</head>
+<body>
+
+<!-- Fixed WhatsApp Icon -->
+<div class="whatsapp-icon">
+  <a href="https://wa.me/+919451823283" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+  </a>
+</div>
+<!--Footer-->
+<div class="container" style="background-color: #E05C21 ;">
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"><h6 style="color: #ebf4ee;">Home</h6></a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"><h6 style="color: #ebf4ee;">Home</h6></a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"><h6 style="color: #ebf4ee;">Home</h6></a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"><h6 style="color: #ebf4ee;">Home</h6></a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"><h6 style="color: #ebf4ee;">Home</h6></a></li>
+    </ul>
+    <p class="text-center text-body-secondary"><h6 style="color: #ebf4ee; text-align: center;">© 2024 BANKEDGE Lucknow</h6></p>
+   <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <a href="https://www.instagram.com"><img height="32" width="32" src="https://unpkg.com/@icon/icofont/icons/instagram.svg" /></a>
+        <img height="32" width="32" src="https://unpkg.com/@icon/icofont/icons/youtube-play.svg" />
+        <img height="32" width="32" src="https://unpkg.com/@icon/icofont/icons/facebook.svg" />
+      </div>
+    </div>
+   </div>
+  </footer>
 </div>
 </body>
 </html>
