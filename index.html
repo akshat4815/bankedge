@@ -404,6 +404,30 @@ html {
       myModal.show();
   });
 </script>
+<!--Form-->
+<div class="container">
+  <h1 class="mt-5">Apply for a Enquiry</h1>
+  <form name="contact" netlify>
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="mobile">Mobile</label>
+      <input type="tel" class="form-control" id="mobile" name="mobile" pattern="\d{10}" maxlength="10" required>
+      <small id="mobileHelp" class="form-text text-muted">Please enter a 10-digit mobile number.</small>
+    </div>
+    <div class="form-group">
+      <label for="city">City</label>
+      <input type="text" class="form-control" id="city" name="city" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Apply</button>
+  </form>
+</div>
   <!--Header-->
 <div class="container px-4 py-5"  data-aos="fade-up">
     <!-- Main Content -->
