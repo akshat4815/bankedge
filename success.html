@@ -9,5 +9,12 @@
 <body>
     <h1>Success Page</h1>
     <p>Your form was successfully submitted!</p>
+    <script>
+        // Check if the current URL is /success (without .html)
+        if (window.location.pathname === "/success") {
+            // Redirect to /success.html
+            window.location.href = "/success.html";
+        }
+    </script>
 </body>
 </html>
